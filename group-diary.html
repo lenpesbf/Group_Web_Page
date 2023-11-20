@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Group 13</title>
+<!-- 
+Hydro Template 
+http://www.templatemo.com/tm-509-hydro
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-style.css">
+</head>
+<body>
+
+    <style>
+        .to-project {
+            border-radius: 30px !important;
+            background-color: #009879;
+            color: white !important;
+        }
+
+        .to-project:hover {
+            background-color: rgb(3, 100, 80) !important;
+            color: white !important;
+        }
+    </style>
+
+    <style>
+        body {font-family: Arial;}
+        
+        /* Style the tab */
+        .tab {
+          text-align: center;
+          overflow: hidden;
+        }
+        
+        /* Style the buttons inside the tab */
+        .tab button {
+          background-color: #ffffff;
+          border: #000000;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+          border-radius:50px;
+        }
+        
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #009879;
+        }
+        
+        /* Create an active/current tablink class */
+        .tab button.active {
+          background-color: #009879;
+        }
+    .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+        
+        /* Style the tab content */
+        .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          border-top: none;
+        }
+    </style>
+      <!-- style table-->
+    <style>
+        * {
+        /* Change your font family */
+        font-family: sans-serif;
+    }
+    
+    .content-table {
+        border-collapse: collapse;
+        margin: 10px 0;
+        font-size: 0.9em;
+        min-width: 100%;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .content-table thead tr th {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .content-table th,
+    .content-table td {
+        padding: 15px 20px;
+    }
+    
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+    
+    .content-table tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+    }
+    </style>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+               <span class="spinner-rotate"></span>
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top top-nav-collapse" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand">Group 13</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="./index.html" class="smoothScroll">Home</a></li>
+                         <li><a href="./about.html" class="smoothScroll">About</a></li>
+                         <li><a href="./group-diary.html" class="smoothScroll">Group Diary</a></li>
+                         <li><a href="./project.html" class="smoothScroll">Project</a></li>
+                         <li><a href="./contact.html" class="smoothScroll">Contacts</a></li>
+                         <li><a href="#" class="smoothScroll to-project">To Project</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+     <!-- GROUP DIARY -->
+     <section id="groupDiary" class="services sections-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>Group diary</h2>
+                <!-- start tab content-->
+
+                <div class="tab">
+                  <button class="tablinks" onclick="openWeek(event, 'Week1')" id="defaultOpen">Week 1</button>
+                  <button class="tablinks" onclick="openWeek(event, 'Week2')">Week 2</button>
+                  <button class="tablinks" onclick="openWeek(event, 'Week3')">Week 3</button>
+                  <button class="tablinks" onclick="openWeek(event, 'Week4')">Week 4-5</button>
+                  <button class="tablinks" onclick="openWeek(event, 'Week6')">Week 6-7</button>
+                  <button class="tablinks" onclick="openWeek(event, 'Week8')">Week 8-9</button>
+                
+                </div>
+                
+                <div id="Week1" class="tabcontent">
+                  <table class="content-table">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th>MSSV</th>
+                        <th>Họ tên</th>
+                        <th>Công việc được giao</th>
+                        <th>Kết quả</th>
+                        <th>Tiến độ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>22130123</td>
+                        <td>Phạm Tuấn Khoa</td>
+                        <td>Tìm hiểu về tạo và liên kết tên miền</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <td>2</td>
+                      <td>22130043</td>
+                      <td>Võ Xuân Đông</td>
+                      <td>Tìm hiểu firebase</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>22130120</td>
+                        <td>Phạm Quốc Khánh</td>
+                        <td>Tìm hiểu figma</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>22130049</td>
+                        <td>Lê Trí Đức</td>
+                        <td>Tìm hiểu hosting cho website nhóm </td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>      
+                      <td>5</td>
+                      <td>22130111</td>
+                      <td>Đỗ An Khang</td>
+                      <td>Tìm hiểu firebase</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <div id="Week2" class="tabcontent">
+                  <table class="content-table">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th>MSSV</th>
+                        <th>Họ tên</th>
+                        <th>Công việc được giao</th>
+                        <th>Kết quả</th>
+                        <th>Tiến độ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>22130123</td>
+                        <td>Phạm Tuấn Khoa</td>
+                        <td>Tạo tên miền ".tk" & tạo trang Project cho nhóm</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <td>2</td>
+                      <td>22130043</td>
+                      <td>Võ Xuân Đông</td>
+                      <td>Tạo trang Group Diary</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>22130120</td>
+                        <td>Phạm Quốc Khánh</td>
+                        <td>Tìm template cho website nhóm</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>22130049</td>
+                        <td>Lê Trí Đức</td>
+                        <td>Tạo project firebase</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>      
+                      <td>5</td>
+                      <td>22130111</td>
+                      <td>Đỗ An Khang</td>
+                      <td>Tạo trang Technical</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <div id="Week3" class="tabcontent">
+                  <table class="content-table">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th>MSSV</th>
+                        <th>Họ tên</th>
+                        <th>Công việc được giao</th>
+                        <th>Kết quả</th>
+                        <th>Tiến độ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>22130123</td>
+                        <td>Phạm Tuấn Khoa</td>
+                        <td>Liên kết tên với miền ".tk" & tạo trang Style guide</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <td>2</td>
+                      <td>22130043</td>
+                      <td>Võ Xuân Đông</td>
+                      <td>Cập nhật trang Group diary</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>22130120</td>
+                        <td>Phạm Quốc Khánh</td>
+                        <td>Thiết kế trang About</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>22130049</td>
+                        <td>Lê Trí Đức</td>
+                        <td>Thiết kế trang Home</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>      
+                      <td>5</td>
+                      <td>22130111</td>
+                      <td>Đỗ An Khang</td>
+                      <td>Cập nhật trang Technical</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                
+                <div id="Week4" class="tabcontent">
+                  <table class="content-table">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th>MSSV</th>
+                        <th>Họ tên</th>
+                        <th>Công việc được giao</th>
+                        <th>Kết quả</th>
+                        <th>Tiến độ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>22130123</td>
+                        <td>Phạm Tuấn Khoa</td>
+                        <td>Hoàn thành website cá nhân</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <td>2</td>
+                      <td>22130043</td>
+                      <td>Võ Xuân Đông</td>
+                      <td>Hoàn thành website cá nhân</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>22130120</td>
+                        <td>Phạm Quốc Khánh</td>
+                        <td>Hoàn thành website cá nhân</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>22130049</td>
+                        <td>Lê Trí Đức</td>
+                        <td>Hoàn thành website cá nhân</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>      
+                      <td>5</td>
+                      <td>22130111</td>
+                      <td>Đỗ An Khang</td>
+                      <td>Hoàn thành website cá nhân</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <div id="Week8" class="tabcontent">
+                  <table class="content-table">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th>MSSV</th>
+                        <th>Họ tên</th>
+                        <th>Công việc được giao</th>
+                        <th>Kết quả</th>
+                        <th>Tiến độ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>22130123</td>
+                        <td>Phạm Tuấn Khoa</td>
+                        <td>Hoàn thiện trang Home và About</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <td>2</td>
+                      <td>22130043</td>
+                      <td>Võ Xuân Đông</td>
+                      <td>Hoàn thiện phần Contact và Sign up</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>22130120</td>
+                        <td>Phạm Quốc Khánh</td>
+                        <td>Hoàn thiện trang Shop Pay</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>22130049</td>
+                        <td>Lê Trí Đức</td>
+                        <td>Hoàn thiện phần login và Forgot Password  </td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>      
+                      <td>5</td>
+                      <td>22130111</td>
+                      <td>Đỗ An Khang</td>
+                      <td>Hoàn thiện phần Shop search</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <div id="Week6" class="tabcontent">
+                  <table class="content-table">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th>MSSV</th>
+                        <th>Họ tên</th>
+                        <th>Công việc được giao</th>
+                        <th>Kết quả</th>
+                        <th>Tiến độ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>22130123</td>
+                        <td>Phạm Tuấn Khoa</td>
+                        <td>Tạo trang Home và About</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <td>2</td>
+                      <td>22130043</td>
+                      <td>Võ Xuân Đông</td>
+                      <td>Tạo phần Contact và Sign up</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>22130120</td>
+                        <td>Phạm Quốc Khánh</td>
+                        <td>Tạo trang Shop Pay</td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>22130049</td>
+                        <td>Lê Trí Đức</td>
+                        <td>Tạo phần login và Forgot Password </td>
+                        <td>hoàn thành</td>
+                        <td>100%</td>
+                      </tr>      
+                      <td>5</td>
+                      <td>22130111</td>
+                      <td>Đỗ An Khang</td>
+                      <td>Tạo phần Shop search</td>
+                      <td>hoàn thành</td>
+                      <td>100%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+           </div>
+        </div>
+    </section>
+    <!-- GROUP DIARY-->
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-5 col-sm-12">
+                         <div class="footer-thumb footer-info"> 
+                              <h2>Hydro Company</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h2>Company</h2>
+                              <ul class="footer-link">
+                                   <li><a href="#">About Us</a></li>
+                                   <li><a href="#">Join our team</a></li>
+                                   <li><a href="#">Read Blog</a></li>
+                                   <li><a href="#">Press</a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h2>Services</h2>
+                              <ul class="footer-link">
+                                   <li><a href="#">Pricing</a></li>
+                                   <li><a href="#">Documentation</a></li>
+                                   <li><a href="#">Support</a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h2>Find us</h2>
+                              <p>123 Grand Rama IX, <br> Krung Thep Maha Nakhon 10400</p>
+                         </div>
+                    </div>                    
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="footer-bottom">
+                              <div class="col-md-6 col-sm-5">
+                                   <div class="copyright-text"> 
+                                        <p>Copyright &copy; 2017 Your Company</p>
+                                   </div>
+                              </div>
+                              <div class="col-md-6 col-sm-7">
+                                   <div class="phone-contact"> 
+                                        <p>Call us <span>(+66) 010-020-0340</span></p>
+                                   </div>
+                                   <ul class="social-icon">
+                                        <li><a href="https://www.facebook.com/templatemo" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- MODAL -->
+     <section class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+               <div class="modal-content modal-popup">
+
+                    <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                         </button>
+                    </div>
+
+                    <div class="modal-body">
+                         <div class="container-fluid">
+                              <div class="row">
+
+                                   <div class="col-md-12 col-sm-12">
+                                        <div class="modal-title">
+                                             <h2>Hydro Co</h2>
+                                        </div>
+
+                                        <!-- NAV TABS -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                             <li class="active"><a href="#sign_up" aria-controls="sign_up" role="tab" data-toggle="tab">Create an account</a></li>
+                                             <li><a href="#sign_in" aria-controls="sign_in" role="tab" data-toggle="tab">Sign In</a></li>
+                                        </ul>
+
+                                        <!-- TAB PANES -->
+                                        <div class="tab-content">
+                                             <div role="tabpanel" class="tab-pane fade in active" id="sign_up">
+                                                  <form action="#" method="post">
+                                                       <input type="text" class="form-control" name="name" placeholder="Name" required>
+                                                       <input type="telephone" class="form-control" name="telephone" placeholder="Telephone" required>
+                                                       <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                                       <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                                       <input type="submit" class="form-control" name="submit" value="Submit Button">
+                                                  </form>
+                                             </div>
+
+                                             <div role="tabpanel" class="tab-pane fade in" id="sign_in">
+                                                  <form action="#" method="post">
+                                                       <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                                       <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                                       <input type="submit" class="form-control" name="submit" value="Submit Button">
+                                                       <a href="https://www.facebook.com/templatemo">Forgot your password?</a>
+                                                  </form>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+     <script>
+        function openWeek(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+        </script>
+
+</body>
+</html>
