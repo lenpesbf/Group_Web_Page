@@ -127,6 +127,10 @@ http://www.templatemo.com/tm-509-hydro
         font-weight: bold;
         color: #009879;
     }
+
+    .content-table tbody {
+      background-color:#dddddd;
+    }
     </style>
 
      <!-- PRE LOADER -->
@@ -176,16 +180,12 @@ http://www.templatemo.com/tm-509-hydro
                 <!-- start tab content-->
 
                 <div class="tab">
-                  <button class="tablinks" onclick="openWeek(event, 'Week1')" id="defaultOpen">Week 1</button>
-                  <button class="tablinks" onclick="openWeek(event, 'Week2')">Week 2</button>
-                  <button class="tablinks" onclick="openWeek(event, 'Week3')">Week 3</button>
-                  <button class="tablinks" onclick="openWeek(event, 'Week4')">Week 4-5</button>
-                  <button class="tablinks" onclick="openWeek(event, 'Week6')">Week 6-7</button>
-                  <button class="tablinks" onclick="openWeek(event, 'Week8')">Week 8-9</button>
-                
+                  <button class="tablinks" onclick="openWeek(event, 'Week5')" id="defaultOpen">Week 5</button>
+                  <!-- <button class="tablinks" onclick="openWeek(event, 'Week6')">Week 6-7</button>
+                  <button class="tablinks" onclick="openWeek(event, 'Week8')">Week 8-9</button>    -->
                 </div>
                 
-                <div id="Week1" class="tabcontent">
+                <div id="Week5" class="tabcontent">
                   <table class="content-table">
                     <thead>
                       <tr>
@@ -193,7 +193,8 @@ http://www.templatemo.com/tm-509-hydro
                         <th>MSSV</th>
                         <th>Họ tên</th>
                         <th>Công việc được giao</th>
-                        <th>Kết quả</th>
+                        <th>Ngày bắt đầu</th>
+                        <th>Ngày hoàn thành</th>
                         <th>Tiến độ</th>
                       </tr>
                     </thead>
@@ -202,211 +203,50 @@ http://www.templatemo.com/tm-509-hydro
                         <td>1</td>
                         <td>22130123</td>
                         <td>Phạm Tuấn Khoa</td>
-                        <td>Tìm hiểu về tạo và liên kết tên miền</td>
-                        <td>hoàn thành</td>
+                        <td>Tạo web nhóm và Group Diary</td>
+                        <td>19/11/2023</td>
+                        <td>20/11/2023</td>
                         <td>100%</td>
                       </tr>
                       <td>2</td>
                       <td>22130043</td>
                       <td>Võ Xuân Đông</td>
-                      <td>Tìm hiểu firebase</td>
-                      <td>hoàn thành</td>
+                      <td>Tạo trang About của web nhóm</td>
+                      <td>18/11/2023</td>
+                      <td>20/11/2023</td>
                       <td>100%</td>
                       </tr>
                       <tr>
                         <td>3</td>
                         <td>22130120</td>
                         <td>Phạm Quốc Khánh</td>
-                        <td>Tìm hiểu figma</td>
-                        <td>hoàn thành</td>
+                        <td>Tạo trang Project của web nhóm</td>
+                        <td>19/11/2023</td>
+                        <td>20/11/2023</td>
                         <td>100%</td>
                       </tr>
                       <tr>
                         <td>4</td>
                         <td>22130049</td>
                         <td>Lê Trí Đức</td>
-                        <td>Tìm hiểu hosting cho website nhóm </td>
-                        <td>hoàn thành</td>
+                        <td>Tạo trang Home của web nhóm</td>
+                        <td>19/11/2023</td>
+                        <td>20/11/2023</td>
                         <td>100%</td>
                       </tr>      
                       <td>5</td>
                       <td>22130111</td>
                       <td>Đỗ An Khang</td>
-                      <td>Tìm hiểu firebase</td>
-                      <td>hoàn thành</td>
+                      <td>Tạo trang contact của web nhóm</td>
+                      <td>19/11/2023</td>
+                      <td>20/11/2023</td>
                       <td>100%</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
                 
-                <div id="Week2" class="tabcontent">
-                  <table class="content-table">
-                    <thead>
-                      <tr>
-                        <th>STT</th>
-                        <th>MSSV</th>
-                        <th>Họ tên</th>
-                        <th>Công việc được giao</th>
-                        <th>Kết quả</th>
-                        <th>Tiến độ</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>22130123</td>
-                        <td>Phạm Tuấn Khoa</td>
-                        <td>Tạo tên miền ".tk" & tạo trang Project cho nhóm</td>
-                        <td>hoàn thành</td>
-                        <td>100%</td>
-                      </tr>
-                      <td>2</td>
-                      <td>22130043</td>
-                      <td>Võ Xuân Đông</td>
-                      <td>Tạo trang Group Diary</td>
-                      <td>hoàn thành</td>
-                      <td>100%</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>22130120</td>
-                        <td>Phạm Quốc Khánh</td>
-                        <td>Tìm template cho website nhóm</td>
-                        <td>hoàn thành</td>
-                        <td>100%</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>22130049</td>
-                        <td>Lê Trí Đức</td>
-                        <td>Tạo project firebase</td>
-                        <td>hoàn thành</td>
-                        <td>100%</td>
-                      </tr>      
-                      <td>5</td>
-                      <td>22130111</td>
-                      <td>Đỗ An Khang</td>
-                      <td>Tạo trang Technical</td>
-                      <td>hoàn thành</td>
-                      <td>100%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                
-                <div id="Week3" class="tabcontent">
-                  <table class="content-table">
-                    <thead>
-                      <tr>
-                        <th>STT</th>
-                        <th>MSSV</th>
-                        <th>Họ tên</th>
-                        <th>Công việc được giao</th>
-                        <th>Kết quả</th>
-                        <th>Tiến độ</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>22130123</td>
-                        <td>Phạm Tuấn Khoa</td>
-                        <td>Liên kết tên với miền ".tk" & tạo trang Style guide</td>
-                        <td>hoàn thành</td>
-                        <td>100%</td>
-                      </tr>
-                      <td>2</td>
-                      <td>22130043</td>
-                      <td>Võ Xuân Đông</td>
-                      <td>Cập nhật trang Group diary</td>
-                      <td>hoàn thành</td>
-                      <td>100%</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>22130120</td>
-                        <td>Phạm Quốc Khánh</td>
-                        <td>Thiết kế trang About</td>
-                        <td>hoàn thành</td>
-                        <td>100%</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>22130049</td>
-                        <td>Lê Trí Đức</td>
-                        <td>Thiết kế trang Home</td>
-                        <td>hoàn thành</td>
-                        <td>100%</td>
-                      </tr>      
-                      <td>5</td>
-                      <td>22130111</td>
-                      <td>Đỗ An Khang</td>
-                      <td>Cập nhật trang Technical</td>
-                      <td>hoàn thành</td>
-                      <td>100%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                
-                
-                <div id="Week4" class="tabcontent">
-                  <table class="content-table">
-                    <thead>
-                      <tr>
-                        <th>STT</th>
-                        <th>MSSV</th>
-                        <th>Họ tên</th>
-                        <th>Công việc được giao</th>
-                        <th>Kết quả</th>
-                        <th>Tiến độ</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>22130123</td>
-                        <td>Phạm Tuấn Khoa</td>
-                        <td>Hoàn thành website cá nhân</td>
-                        <td>hoàn thành</td>
-                        <td>100%</td>
-                      </tr>
-                      <td>2</td>
-                      <td>22130043</td>
-                      <td>Võ Xuân Đông</td>
-                      <td>Hoàn thành website cá nhân</td>
-                      <td>hoàn thành</td>
-                      <td>100%</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>22130120</td>
-                        <td>Phạm Quốc Khánh</td>
-                        <td>Hoàn thành website cá nhân</td>
-                        <td>hoàn thành</td>
-                        <td>100%</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>22130049</td>
-                        <td>Lê Trí Đức</td>
-                        <td>Hoàn thành website cá nhân</td>
-                        <td>hoàn thành</td>
-                        <td>100%</td>
-                      </tr>      
-                      <td>5</td>
-                      <td>22130111</td>
-                      <td>Đỗ An Khang</td>
-                      <td>Hoàn thành website cá nhân</td>
-                      <td>hoàn thành</td>
-                      <td>100%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                
-                <div id="Week8" class="tabcontent">
+                <!-- <div id="Week8" class="tabcontent">
                   <table class="content-table">
                     <thead>
                       <tr>
@@ -514,7 +354,7 @@ http://www.templatemo.com/tm-509-hydro
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </div> -->
            </div>
         </div>
     </section>
